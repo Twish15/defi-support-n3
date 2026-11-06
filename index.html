@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Sept tickets d'incident interactifs : SharePoint, DNS, Odoo, Power Automate, SQL, diagnostic de panne et une fonction Python exécutée dans le navigateur."
+    />
+    <title>Le défi · Es-tu meilleur que le développeur ?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top">
+        <a class="brand" href="https://github.com/Twish15"
+          ><img src="images/photo-daouda.jpg" alt="" /><span>Daouda Dao<br /><small>Développeur full-stack</small></span></a
+        >
+        <div class="lang" role="group" aria-label="Langue">
+          <button type="button" data-lang="fr" class="on">FR</button><button type="button" data-lang="en">EN</button>
+        </div>
+      </header>
+      <section class="card dark pad" id="defi">
+        <div class="ghost">TICKETS</div>
+        <div class="sec-head">
+          <h2 class="sec-title"><span class="slash">/</span>Le défi</h2>
+          <p class="sec-side">
+            Sept tickets inspirés de situations réelles : SharePoint, DNS, Odoo, Power Automate, SQL, diagnostic de panne et un script
+            Python à écrire. Le chrono tourne, les mauvais clics coûtent des points.
+          </p>
+        </div>
+        <div class="defi-grid">
+          <div class="defi-intro">
+            <h3 data-rich="defiH">Es-tu meilleur que <em>le développeur</em> ?</h3>
+            <p data-rich="defiP">
+              Une bibliothèque SharePoint qui disparaît, un site injoignable après un renouvellement de domaine, une facture Odoo sans TVA,
+              un flux Power Automate muet, un rapport SQL plein de doublons, une panne générale à 8 h 02, puis une fonction Python à écrire
+              et à faire passer aux tests. <b>1 400 points</b> en jeu, environ 20 minutes.
+            </p>
+            <div class="defi-cta">
+              <button type="button" class="pill accent-pill lg" id="defiStart">
+                Relever le défi
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </button>
+              <span class="meta" id="defiMeta">≈ 20 min · 7 tickets</span>
+            </div>
+            <div class="tickets" id="tickets"></div>
+          </div>
+          <aside class="hall" aria-label="Classement">
+            <div class="hh"><b>Hall of fame</b><span>top 5 · ce navigateur</span></div>
+            <div class="ref">
+              <img src="images/photo-daouda.jpg" alt="" />
+              <div class="n">Daouda Dao<small>le développeur · score à battre</small></div>
+              <div class="sc">1150</div>
+            </div>
+            <ol id="hallList"></ol>
+            <p class="empty" id="hallEmpty">Aucun score pour l'instant. Le premier sera le vôtre.</p>
+          </aside>
+        </div>
+      </section>
+      <footer class="foot">
+        <span>Un extrait de mon portfolio, sans dépendance ni étape de construction.</span>
+        <nav>
+          <a class="pill" href="https://github.com/Twish15" target="_blank" rel="noopener">GitHub</a
+          ><a class="pill" href="https://linkedin.com/in/ddaouda-dao" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </footer>
+    </div>
+    <dialog class="game" id="game" aria-label="Le défi">
+      <div class="g-wrap">
+        <div class="g-top">
+          <span class="g-id" id="gId">Ticket 01 / 07</span>
+          <div class="g-stats">
+            <span>⏱ <b id="gTime">00:00</b></span
+            ><span>★ <b id="gScore">0</b> pts</span>
+          </div>
+          <div style="display: flex; gap: 8px">
+            <button type="button" class="g-btn" id="gHint">Indice (−50)</button
+            ><button type="button" class="g-btn" id="gQuit">Quitter</button>
+          </div>
+        </div>
+        <div id="gBody"></div>
+      </div>
+    </dialog>
+    <script src="js/i18n.js"></script>
+    <script src="js/defi.js"></script>
+  </body>
+</html>

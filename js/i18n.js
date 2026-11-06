@@ -6,6 +6,7 @@ const EN = {
   "Sept tickets inspirés de situations réelles : SharePoint, DNS, Odoo, Power Automate, SQL, diagnostic de panne et un script Python à écrire. Le chrono tourne, les mauvais clics coûtent des points.":
     "Seven tickets inspired by real situations: SharePoint, DNS, Odoo, Power Automate, SQL, outage diagnosis and a Python script to write. The clock is running and wrong clicks cost points.",
   "Relever le défi": "Take the challenge",
+  "Voir le code sur GitHub ↗": "See the code on GitHub ↗",
   "top 5 · ce navigateur": "top 5 · this browser",
   "le développeur · score à battre": "the developer · score to beat",
   "Aucun score pour l'instant. Le premier sera le vôtre.": "No score yet. The first one will be yours.",
